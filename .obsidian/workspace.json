@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "2b32c71d3e82dcc8",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4647d018309356a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d810e05a1a34abd8",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fb4a476832ff932b",
+    "type": "split",
+    "children": [
+      {
+        "id": "5faf8160db5ff16c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "847e3537d24acba3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "c0592de9dd973023",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "4f7b39fc4ad089a9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 388.5
+  },
+  "right": {
+    "id": "2a3089859bdbb602",
+    "type": "split",
+    "children": [
+      {
+        "id": "39e8b17c92e73ecf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d3bb366b149401d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "6e0c7eac47cade22",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "ef574ff4dd2e5593",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "9d21c6bc4520735a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "7c94163ea3373def",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "d810e05a1a34abd8",
+  "lastOpenFiles": [
+    "Bienvenido.md",
+    "00 - Inicio.md",
+    "Cambio de gobernanza en novedades laborales..md",
+    "01 - Reuniones/2026/2026-04-16 - Consejo consultivo y designaciones docentes.md",
+    "01 - Reuniones/2026/2026-04-10 - Itinerancia Docente.md",
+    "01 - Reuniones/2026/2026-04-07 - Suplencias y licencias en educación.md",
+    "01 - Reuniones/2026/2026-04-07 - Jefatura de departamento interina.md",
+    "01 - Reuniones/2026/2026-03-30 - Novedades laborales y licencias.md",
+    "01 - Reuniones/2026/2026-02-06 - Implementación SGPEM.md",
+    "01 - Reuniones/2026/2026 - Cronología SGPEM consolidada.md",
+    "01 - Reuniones/2026",
+    "01 - Reuniones",
+    "02 - Diseño funcional/SGPEM - Traslados transitorios.md",
+    "02 - Diseño funcional/SGPEM - Sugerencias para transición a ordenamiento administrativo central (Primario).md",
+    "02 - Diseño funcional/SGPEM - Sugerencias operativas.md",
+    "02 - Diseño funcional/SGPEM - Marco base de novedades laborales.md",
+    "02 - Diseño funcional/SGPEM - Documento didactico integral.md",
+    "02 - Diseño funcional",
+    "03 - Diseño técnico/SGPEM - Plan técnico v5.md",
+    "03 - Diseño técnico",
+    "04 - Diagramas (Excalidraw)/PLANILLA DE NOVEDADES.excalidraw",
+    "04 - Diagramas (Excalidraw)/Flujo Completo SGPEM - End to End.excalidraw.md",
+    "04 - Diagramas (Excalidraw)/Flujo Completo SGPEM - End to End (copia 1).excalidraw",
+    "04 - Diagramas (Excalidraw)",
+    "05 - Decisiones/ADR-002 - Version ejecutiva para decision SGPEM v3 y licencias.md",
+    "05 - Decisiones/ADR-001 - Estructura del proyecto SGPEM en Obsidian.md",
+    "05 - Decisiones",
+    "06 - Pendientes/Tablero SGPEM.md",
+    "06 - Pendientes",
+    "07- Bounded Context/INFORME EJECUTIVO/Informe ejecutivo unificado - Diseño de bounded contexts de novedades laborales.md",
+    "07- Bounded Context/INFORME EJECUTIVO",
+    "07- Bounded Context/SINTESIS E INTERFACES/Matriz comparativa - Bounded contexts de novedades laborales.md",
+    "07- Bounded Context/SINTESIS E INTERFACES/Matriz de interfaces - Bounded contexts de novedades laborales.md",
+    "07- Bounded Context/NIVEL TACTICO/BC-03/Escenarios BDD - BC-03 - Cobertura transitoria.md",
+    "07- Bounded Context/NIVEL TACTICO/BC-03/Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria.md",
+    "07- Bounded Context/NIVEL TACTICO/BC-01/Escenarios BDD - BC-01 - Encuadre administrativo de la novedad.md"
+  ]
+}
