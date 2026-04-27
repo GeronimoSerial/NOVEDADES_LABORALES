@@ -14,7 +14,7 @@ tags:
 > Este bounded context existe para recibir una novedad, darle un encuadre administrativo inicial y derivarla al contexto funcional correcto. Su valor no esta en resolver toda la logica de negocio del caso, sino en evitar que el sistema mezcle recepcion, clasificacion y tratamiento profundo en un mismo paso. Tambien define la autoridad de encuadre, los estados de entrada y las condiciones minimas para admitir, observar, rechazar o derivar un caso.
 
 > [!tip]
-> Para el nivel tactico y los casos de negocio de este contexto, ver `[[NIVEL TACTICO/BC-01/Catalogo de decisiones y eventos - BC-01 - Encuadre administrativo de la novedad]]` y `[[NIVEL TACTICO/BC-01/Escenarios BDD - BC-01 - Encuadre administrativo de la novedad]]`.
+> Para el nivel tactico y los casos de negocio de este contexto, ver `[[Catalogo de decisiones y eventos - BC-01 - Encuadre administrativo de la novedad]]` y `[[Escenarios BDD - BC-01 - Encuadre administrativo de la novedad]]`.
 
 ## 1. Por qué es un bounded context separado
 
@@ -165,11 +165,11 @@ En general, la derivación automática se apoya en una combinación de estas con
 1. Toda novedad debe tener un encuadre inicial antes de ser tratada a fondo.
 2. Ningún caso debe entrar directamente a un flujo especifico sin familia o tipo reconocible.
 3. Este contexto clasifica y deriva; no resuelve el negocio especifico de cada familia.
-4. Si faltan datos minimos o evidencia simple, el caso no desaparece: queda `pendiente`.
-5. Si existe inconsistencia, contradiccion o duda de encuadre, el caso queda `observado`.
+4. Si faltan datos mínimos o evidencia simple, el caso no desaparece: queda `pendiente`.
+5. Si existe inconsistencia, contradicción o duda de encuadre, el caso queda `observado`.
 6. Las reglas de familia deben ser canónicamente definidas aquí, aunque su negocio profundo viva en otros contextos.
 7. El encuadre se decide principalmente por la `pregunta dominante del caso`, no solo por el rotulo informado.
-8. No se admite un caso basado solo en relato sin respaldo minimo suficiente.
+8. No se admite un caso basado solo en relato sin respaldo mínimo suficiente.
 9. La autoridad de encuadre es mixta por familia; BC-01 no impone una autoridad unica para todo el dominio.
 10. El rechazo es terminal, como minimo, para casos `fuera de dominio`, `sin agente`, `sin cargo/plaza` o con `contradiccion fuerte`.
 

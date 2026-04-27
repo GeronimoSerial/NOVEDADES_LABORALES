@@ -4,24 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f4647d018309356a",
+        "id": "e688cde6e6e43722",
         "type": "tabs",
         "children": [
           {
-            "id": "d810e05a1a34abd8",
+            "id": "6b5220f2d7f6f07e",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Sin título.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "07- Bounded Context/BC-03 - Cobertura transitoria/Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Sin título"
+              "icon": "lucide-file",
+              "title": "Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria"
             }
           }
         ]
@@ -81,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 388.5
+    "width": 318.5
   },
   "right": {
     "id": "2a3089859bdbb602",
@@ -186,43 +183,43 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "d810e05a1a34abd8",
+  "active": "6b5220f2d7f6f07e",
   "lastOpenFiles": [
-    "Sin título.canvas",
-    "Sin título.base",
-    "Bienvenido.md",
-    "00 - Inicio.md",
-    "Cambio de gobernanza en novedades laborales..md",
-    "01 - Reuniones/2026/2026-04-16 - Consejo consultivo y designaciones docentes.md",
-    "01 - Reuniones/2026/2026-04-10 - Itinerancia Docente.md",
-    "01 - Reuniones/2026/2026-04-07 - Suplencias y licencias en educación.md",
-    "01 - Reuniones/2026/2026-04-07 - Jefatura de departamento interina.md",
-    "01 - Reuniones/2026/2026-03-30 - Novedades laborales y licencias.md",
-    "01 - Reuniones/2026/2026-02-06 - Implementación SGPEM.md",
-    "01 - Reuniones/2026/2026 - Cronología SGPEM consolidada.md",
-    "01 - Reuniones/2026",
-    "01 - Reuniones",
-    "02 - Diseño funcional/SGPEM - Traslados transitorios.md",
-    "02 - Diseño funcional/SGPEM - Sugerencias para transición a ordenamiento administrativo central (Primario).md",
-    "02 - Diseño funcional/SGPEM - Sugerencias operativas.md",
-    "02 - Diseño funcional/SGPEM - Marco base de novedades laborales.md",
-    "02 - Diseño funcional/SGPEM - Documento didactico integral.md",
-    "02 - Diseño funcional",
-    "03 - Diseño técnico/SGPEM - Plan técnico v5.md",
-    "03 - Diseño técnico",
-    "04 - Diagramas (Excalidraw)/PLANILLA DE NOVEDADES.excalidraw",
-    "04 - Diagramas (Excalidraw)/Flujo Completo SGPEM - End to End.excalidraw.md",
-    "04 - Diagramas (Excalidraw)/Flujo Completo SGPEM - End to End (copia 1).excalidraw",
-    "04 - Diagramas (Excalidraw)",
-    "05 - Decisiones/ADR-002 - Version ejecutiva para decision SGPEM v3 y licencias.md",
-    "05 - Decisiones/ADR-001 - Estructura del proyecto SGPEM en Obsidian.md",
-    "05 - Decisiones",
-    "06 - Pendientes/Tablero SGPEM.md",
-    "06 - Pendientes",
-    "07- Bounded Context/INFORME EJECUTIVO/Informe ejecutivo unificado - Diseño de bounded contexts de novedades laborales.md",
-    "07- Bounded Context/SINTESIS E INTERFACES/Matriz comparativa - Bounded contexts de novedades laborales.md",
-    "07- Bounded Context/SINTESIS E INTERFACES/Matriz de interfaces - Bounded contexts de novedades laborales.md",
-    "07- Bounded Context/NIVEL TACTICO/BC-03/Escenarios BDD - BC-03 - Cobertura transitoria.md",
-    "07- Bounded Context/NIVEL TACTICO/BC-03/Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria.md"
+    "07- Bounded Context/BC-03 - Cobertura transitoria/Escenarios BDD - BC-03 - Cobertura transitoria.md",
+    "Sin título 1.base",
+    "07- Bounded Context/BC-03 - Cobertura transitoria/Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria.md",
+    "07- Bounded Context/BC-03 - Cobertura transitoria/BC-03 - Cobertura transitoria.md",
+    "07- Bounded Context/01 - Mapa y clasificacion.md",
+    "07- Bounded Context/00 - Inicio.md",
+    "07- Bounded Context/SINTESIS E INTERFACES/Interfaz prioritaria - BC-07 a BC-01 a BC-03 - Designacion suplente.md",
+    "07- Bounded Context/03 - Conceptos transversales/Plaza, estado y vacante.md",
+    "07- Bounded Context/02 - Interfaces/Interfaz prioritaria - BC-07 a BC-01 a BC-03 - Designacion suplente.md",
+    "07- Bounded Context/02 - Interfaces/Matriz de interfaces - Bounded contexts de novedades laborales.md",
+    "07- Bounded Context/BC-08 - Consolidacion y cierre/BC-08 - Consolidacion y cierre.md",
+    "07- Bounded Context/BC-07 - Integraciones y conciliacion/Escenarios BDD - BC-07 - Integraciones y conciliacion.md",
+    "07- Bounded Context/BC-07 - Integraciones y conciliacion/Catalogo de decisiones y eventos - BC-07 - Integraciones y conciliacion.md",
+    "07- Bounded Context/BC-07 - Integraciones y conciliacion/BC-07 - Integraciones y conciliación.md",
+    "07- Bounded Context/BC-06 - Ocupacion estable de cargos/BC-06 - Ocupacion estable de cargos.md",
+    "07- Bounded Context/BC-05 - Egresos definitivos/BC-05 - Egresos definitivos.md",
+    "07- Bounded Context/BC-04 - Movilidad funcional/BC-04 - Movilidad funcional.md",
+    "07- Bounded Context/BC-02 - Interrupciones temporales/BC-02 - Interrupciones temporales.md",
+    "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad/Escenarios BDD - BC-01 - Encuadre administrativo de la novedad.md",
+    "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad/Catalogo de decisiones y eventos - BC-01 - Encuadre administrativo de la novedad.md",
+    "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad/BC-01 - Encuadre administrativo de la novedad.md",
+    "07- Bounded Context/BC-08 - Consolidacion y cierre",
+    "07- Bounded Context/BC-07 - Integraciones y conciliacion",
+    "07- Bounded Context/BC-06 - Ocupacion estable de cargos",
+    "07- Bounded Context/BC-05 - Egresos definitivos",
+    "07- Bounded Context/BC-04 - Movilidad funcional",
+    "07- Bounded Context/BC-03 - Cobertura transitoria",
+    "07- Bounded Context/BC-02 - Interrupciones temporales",
+    "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad",
+    "07- Bounded Context/03 - Conceptos transversales",
+    "07- Bounded Context/NIVEL TACTICO/BC-01/Catalogo de decisiones y eventos - BC-01 - Encuadre administrativo de la novedad.md",
+    "07- Bounded Context/NIVEL TACTICO/BC-01/Escenarios BDD - BC-01 - Encuadre administrativo de la novedad.md",
+    "07- Bounded Context/NIVEL TACTICO/BC-07/Escenarios BDD - BC-07 - Integraciones y conciliacion.md",
+    "07- Bounded Context/NIVEL TACTICO/BC-07/Catalogo de decisiones y eventos - BC-07 - Integraciones y conciliacion.md",
+    "07- Bounded Context/BC - DEFINICIONES ESTRATEGICAS/BC-01 - Encuadre administrativo de la novedad.md",
+    "Sin título.canvas"
   ]
 }

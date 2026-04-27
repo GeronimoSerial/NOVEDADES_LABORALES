@@ -137,17 +137,39 @@ Y se emite `Cobertura vigente`
 ### Escenario: Efectivizar una cobertura validada por designacion externa cuando la escuela confirma la toma de posesion
 
 Dado una `cobertura validada` a partir de una `designacion suficiente` proveniente de integracion externa
-Y una confirmacion local de `toma de posesion` mediante codigo o QR vinculable a esa designacion
+Y una confirmacion local trazable de `toma de posesion`
+Y `certificado de aptitud`
 Cuando `BC-03 - Cobertura transitoria` registra la `toma de posesion`
-Entonces la cobertura queda `efectivizada`
+Entonces queda registrada la `toma de posesion`
+Y la cobertura queda `efectivizada`
 Y la cobertura pasa a `cobertura vigente`
 
-### Escenario: No efectivizar una cobertura validada por designacion externa si el codigo o QR no puede vincularse con la toma de posesion
+### Escenario: Efectivizar una cobertura validada por designacion externa con constancia de turno a reconocimientos medicos
 
 Dado una `cobertura validada` a partir de una `designacion suficiente` proveniente de integracion externa
-Y una confirmacion local informada con codigo o QR
-Pero ese codigo o QR no puede vincularse de manera trazable con la designacion validada
+Y una confirmacion local trazable de `toma de posesion`
+Y que no se adjunta `certificado de aptitud`
+Pero si se adjunta `constancia del turno a reconocimientos medicos`
+Cuando `BC-03 - Cobertura transitoria` registra la `toma de posesion`
+Entonces queda registrada la `toma de posesion`
+Y la cobertura queda `efectivizada`
+Y la cobertura pasa a `cobertura vigente`
+
+### Escenario: No efectivizar una cobertura validada por designacion externa sin certificado ni constancia de turno
+
+Dado una `cobertura validada` a partir de una `designacion suficiente` proveniente de integracion externa
+Y una confirmacion local trazable de `toma de posesion`
+Y que no se adjunta `certificado de aptitud`
+Y que tampoco se adjunta `constancia del turno a reconocimientos medicos`
 Cuando `BC-03 - Cobertura transitoria` revisa si corresponde registrar la `toma de posesion`
+Entonces la cobertura no puede quedar `efectivizada`
+Y la cobertura todavia no puede pasar a `cobertura vigente`
+
+### Escenario: No efectivizar una cobertura validada por designacion externa si la toma de posesion no se realiza
+
+Dado una `cobertura validada` a partir de una `designacion suficiente` proveniente de integracion externa
+Y que la escuela informa que la persona designada no se presento a tomar posesion
+Cuando `BC-03 - Cobertura transitoria` revisa si corresponde iniciar el ejercicio efectivo
 Entonces la cobertura no puede quedar `efectivizada`
 Y la cobertura todavia no puede pasar a `cobertura vigente`
 

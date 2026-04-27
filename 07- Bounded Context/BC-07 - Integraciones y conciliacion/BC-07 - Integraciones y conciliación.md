@@ -82,6 +82,9 @@ La `regularizacion` en `BC-07` es transversal y minima: corrige desvíos de entr
 
 `BC-07` entrega casos traducidos y trazables; no entrega casos funcionalmente resueltos.
 
+> [!note]
+> En el primer corte tactico priorizado para este proyecto, la `designacion suplente` externa se normaliza en `BC-07 - Integraciones y conciliación` y pasa por `[[BC-01 - Encuadre administrativo de la novedad]]` antes de llegar a `[[BC-03 - Cobertura transitoria]]`, aun cuando la familia funcional ya resulte altamente inferible. Esta restriccion busca ordenar el ingreso inicial sin bloquear una futura derivacion directa para otros tipos de ingreso suficientemente maduros.
+
 ### 4.6 Confianza de origen y autoridad de destino
 
 - una fuente externa puede tener alto peso de confianza inicial,

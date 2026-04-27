@@ -54,10 +54,10 @@ Aunque muchas veces se mezclan con licencias, las suplencias responden a otra l�
 - `cobertura finalizada` es el cierre ordinario de la cobertura,
 - `regularizacion` es excepcional y acotada a coberturas todavía abiertas pero inconsistentes,
 - la cobertura transitoria reemplaza al docente reemplazado o, en forma excepcional, a una referencia funcional equivalente; no cubre la vacante de base,
-- cuando la lógica temporal deja de dominar y aparece una provision estable habilitada, la salida correcta es una `derivacion por cambio de base` hacia `[[BC-06 - Ocupacion estable de cargos]]`.
+- cuando la logica temporal deja de dominar y aparece una provision estable habilitada, la salida correcta es una `derivacion por cambio de base` hacia `[[BC-06 - Ocupacion estable de cargos]]`.
 
 > [!tip]
-> Para el nivel tactico de este bounded context, ver `[[Catálogo de decisiones y eventos - BC-03 - Cobertura transitoria]]`.
+> Para el nivel tactico de este bounded context, ver `[[Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria]]`.
 
 ## 5. Subpuntos iniciales
 
@@ -84,10 +84,12 @@ Aunque muchas veces se mezclan con licencias, las suplencias responden a otra l�
 
 ### 5.4 Soporte mínimo y efectivizacion
 
-| Subtipo                                        | Soporte minimo obligatorio                                                                                                 | Soporte fuerte adicional                    | Regla de efectivizacion                                                               |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------- |
-| Suplencia por licencia o interrupcion validada | Causante validado, docente reemplazado o referencia funcional equivalente justificada, fecha desde y toma de posesion     | Acto o designacion suficiente cuando exista | La cobertura puede validarse antes, pero solo queda efectivizada con toma de posesion |
+| Subtipo                                        | Soporte minimo obligatorio                                                                                                        | Soporte fuerte adicional                    | Regla de efectivizacion                                                               |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Suplencia por licencia o interrupcion validada | Causante validado, docente reemplazado o referencia funcional equivalente justificada, fecha desde y toma de posesion             | Acto o designacion suficiente cuando exista | La cobertura puede validarse antes, pero solo queda efectivizada con toma de posesion |
 | Suplencia derivada de mayor jerarquia          | Caso rector valido en `BC-04`, docente reemplazado o referencia funcional equivalente justificada, fecha desde y toma de posesion | Acto administrativo del movimiento rector   | La cobertura derivada no queda efectivizada sin toma de posesion                      |
+
+Una `designacion suficiente` proveniente de una `integracion externa` confiable, como un modulo de designaciones, puede alcanzar para dejar una cobertura `validada`, pero no para considerarla `efectivizada` ni `vigente` sin `toma de posesion` local trazable.
 
 ### 5.5 Ciclo de vida de la cobertura
 
@@ -177,16 +179,18 @@ Aunque muchas veces se mezclan con licencias, las suplencias responden a otra l�
 - puede recibir revision, cierre o derivacion desde `[[BC-05 - Egresos definitivos]]` cuando un egreso definitivo recaiga sobre el ocupante vigente reemplazado o altere la trazabilidad de la cobertura,
 - puede derivar excepcionalmente por cambio de base a `[[BC-06 - Ocupacion estable de cargos]]` cuando una suplencia deje de estar dominada por la logica temporal y deba transformarse en interinato u otra ocupación estable,
 - entrega novedades consolidadas o observadas a `[[BC-08 - Consolidacion y cierre]]`,
+- puede recibir desde `[[BC-07 - Integraciones y conciliación]]` una `designacion suficiente` proveniente de integracion externa para validar la cobertura, sin que eso reemplace la `toma de posesion`,
 - puede requerir conciliación o regularización desde `[[BC-07 - Integraciones y conciliación]]`.
 
 ## 11. Puntos de interfaz relevantes
 
 - reglas sobre ausencia validada,
 - acto o designacion suficiente como condicion de validacion,
+- designacion suficiente proveniente de integracion externa confiable como soporte posible de `cobertura validada`,
 - licencia por mayor jerarquia como causante posible de suplencia en el cargo base,
 - distincion entre vacante de base y ocupante vigente cuando existe interino activo,
 - egreso definitivo del ocupante vigente como causal de cierre, revision o derivacion de la cobertura,
-- toma de posesion como requisito de efectivizacion de la cobertura,
+- toma de posesion local como requisito de efectivizacion de la cobertura, incluso cuando la designacion llegue por integracion externa,
 - trazabilidad entre cobertura y caso causante,
 - trazabilidad entre suplencia antecedente y eventual pase a ocupacion estable cuando exista vacancia definitiva,
 - regularizaciones por cierres tardíos o inconsistentes.

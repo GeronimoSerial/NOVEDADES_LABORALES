@@ -79,9 +79,9 @@ tags:
 | Campo               | Contenido                                                                                                                                         |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Pregunta de negocio | Si la cobertura validada ya puede iniciar ejercicio efectivo                                                                                      |
-| Precondiciones      | cobertura validada y evidencia suficiente para registrar la toma de posesion                                                                       |
-| Datos minimos       | referencia de la cobertura validada, fecha de toma de posesion, evidencia de la toma de posesion, agente reemplazante, cargo/plaza               |
-| Reglas              | la toma de posesion es el umbral de efectivizacion; sin toma de posesion no hay ejercicio efectivo; una cobertura validada por `designacion suficiente` recibida por integracion externa sigue necesitando confirmacion local trazable de toma de posesion; la vigencia comienza con esa toma de posesion |
+| Precondiciones      | cobertura validada y confirmacion local suficiente para registrar la toma de posesion                                                               |
+| Datos minimos       | referencia de la cobertura validada, fecha efectiva de toma de posesion, responsable que confirma, constancia local o evidencia de respaldo, agente reemplazante, cargo/plaza |
+| Reglas              | la toma de posesion es el umbral de efectivizacion; sin toma de posesion no hay ejercicio efectivo; una cobertura validada por `designacion suficiente` recibida por integracion externa sigue necesitando confirmacion local trazable de toma de posesion; si falta `certificado de aptitud`, la unica alternativa valida es `constancia del turno a reconocimientos medicos`; sin una de esas dos piezas, la toma de posesion no puede registrarse; con `constancia del turno a reconocimientos medicos`, la cobertura puede efectivizarse normalmente; la vigencia comienza con esa toma de posesion |
 | Resultado           | la cobertura pasa a ejercicio efectivo y entra en vigencia                                                                                        |
 | Eventos emitidos    | `Toma de posesion registrada`, `Cobertura efectivizada`, `Cobertura vigente`                                                                      |
 
@@ -202,11 +202,12 @@ tags:
 5. `Cobertura validada` exige acto o designación suficiente, por integración externa o por otra via trazable.
 6. `Cobertura validada` no equivale a `cobertura vigente`.
 7. Una `designacion suficiente` proveniente de integracion externa puede validar la cobertura, pero no efectivizarla por si sola.
-8. La `toma de posesion` es el umbral de efectivizacion y el inicio de la vigencia.
-9. La cobertura no cubre la vacante de base y no se sostiene por la sola persistencia de esa vacante.
-10. Si el antecedente cambia, desaparece o queda roto por un egreso definitivo del docente reemplazado, la cobertura debe revisarse o cerrarse; `ocupante vigente` queda como precision transversal cuando haga falta leer plaza y vacante.
-11. El `cambio de base` no convierte automaticamente la cobertura en ocupacion estable; solo habilita un nuevo caso por interfaz.
-12. La regularizacion no debe usarse para reabrir coberturas ya finalizadas ni para ocultar coberturas sin causante.
+8. La `toma de posesion` requiere confirmacion local trazable y es el umbral de efectivizacion y el inicio de la vigencia.
+9. Si falta `certificado de aptitud`, solo puede avanzarse con `constancia del turno a reconocimientos medicos`; sin una de esas dos piezas, la efectivizacion queda bloqueada.
+10. La cobertura no cubre la vacante de base y no se sostiene por la sola persistencia de esa vacante.
+11. Si el antecedente cambia, desaparece o queda roto por un egreso definitivo del docente reemplazado, la cobertura debe revisarse o cerrarse; `ocupante vigente` queda como precision transversal cuando haga falta leer plaza y vacante.
+12. El `cambio de base` no convierte automaticamente la cobertura en ocupacion estable; solo habilita un nuevo caso por interfaz.
+13. La regularizacion no debe usarse para reabrir coberturas ya finalizadas ni para ocultar coberturas sin causante.
 
 ## 10. Pendientes residuales
 

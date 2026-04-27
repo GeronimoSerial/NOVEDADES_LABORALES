@@ -205,8 +205,7 @@ Estos campos aparecen una y otra vez en varias interfaces. Conviene tratarlos co
 
 ## 8. Uso recomendado
 
-- usar esta nota como companion de `[[Mapa de bounded contexts - Novedades laborales]]`,
-- cruzarla con `[[Matriz comparativa - Bounded contexts de novedades laborales]]` para detectar solapamientos,
-- usar `[[Clasificacion de novedades laborales por bounded context]]` para validar mapeo de motivos administrativos y familias funcionales contra cada contexto,
+- usar esta nota junto con `[[01 - Mapa y clasificacion]]`,
+- usar `[[01 - Mapa y clasificacion]]` para validar mapeo de motivos administrativos y familias funcionales contra cada contexto,
 - usarla como base para una siguiente nota de `eventos canonicos` o `contratos semanticos por handoff`,
 - validarla contra el catalogo real de motivos de ingreso y egreso antes de bajar a diseno tecnico.

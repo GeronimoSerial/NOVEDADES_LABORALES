@@ -19,7 +19,7 @@ tags:
 
 ## 1. Alcance
 
-- la unidad semantica central es la `novedad` en su etapa de entrada,
+- la unidad semántica central es la `novedad` en su etapa de entrada,
 - el problema rector es `encuadrar` y `derivar`, no resolver el negocio profundo,
 - el catalogo describe admision, preclasificacion, evaluacion de completitud, observacion, rechazo, clasificacion y derivacion,
 - la salida esperada es un caso semanticamente listo para que otro contexto tome su propia decision.
