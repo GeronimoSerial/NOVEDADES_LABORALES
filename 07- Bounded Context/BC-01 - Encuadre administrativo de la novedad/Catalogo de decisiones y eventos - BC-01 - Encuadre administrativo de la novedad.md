@@ -46,7 +46,7 @@ tags:
 | Antecedente de entrada | Significado dentro de `BC-01 - Encuadre administrativo de la novedad` | Datos minimos esperados | Lo que no decide aqui |
 | --- | --- | --- | --- |
 | Ingreso local o central | Permite iniciar el caso con lectura administrativa basica | origen, actor que informa, agente o referencia equivalente, cargo/plaza o referencia equivalente, fecha basica, motivo inicial | la resolucion funcional profunda |
-| Ingreso por integracion externa | Puede habilitar preclasificacion o derivacion automatica si es confiable y consistente | huella externa, fuente, correlacion de agente y cargo/plaza, fecha basica, evidencia externa valida | la decision final del contexto funcional de destino |
+| Ingreso por integracion externa | Puede habilitar preclasificacion o derivacion automatica si es confiable y consistente; en `designacion suplente` puede llegar ya lista para encuadre hacia cobertura | huella externa, fuente, correlacion de agente y cargo/plaza, fecha basica, evidencia externa valida | la decision final del contexto funcional de destino |
 | Reingreso por conciliacion o regularizacion | Reabre lectura de encuadre para casos que vuelven con nueva evidencia | referencia del caso previo, evidencia complementaria, motivo de reingreso, estado previo | rehacer historia funcional fuera de las reglas de cada contexto |
 
 ## 4. Decisiones propias
@@ -91,7 +91,7 @@ tags:
 | Pregunta de negocio | Si hay contradicciones o ambiguedades que impiden una clasificacion confiable |
 | Precondiciones | completitud minima alcanzada o evidencia complementaria en evaluacion |
 | Datos minimos | relato del caso, evidencia disponible, cruces basicos de agente/cargo/plaza/fecha |
-| Reglas | duda relevante o contradiccion de encuadre lleva a `observada`; contradiccion fuerte puede llevar a `rechazada` |
+| Reglas | duda relevante o contradiccion de encuadre lleva a `observada`; contradiccion fuerte puede llevar a `rechazada`; en `designacion suplente` recibida por integracion externa, si no puede individualizarse con claridad el `docente reemplazado`, el caso queda `observada` y no deriva a `BC-03` en este corte |
 | Resultado | caso consistente, `observada` o `rechazada` segun gravedad |
 | Evento emitido | `Novedad observada por inconsistencia o duda de encuadre` cuando aplica |
 
@@ -112,8 +112,8 @@ tags:
 | --- | --- |
 | Pregunta de negocio | Si el caso ya puede enviarse al contexto que lo resolvera |
 | Precondiciones | novedad clasificada y umbral de handoff alcanzado |
-| Datos minimos | familia destino, datos minimos del handoff, evidencia minima preservada, trazabilidad del origen |
-| Reglas | el emisor entrega un caso semanticamente listo, no un caso ya resuelto por el receptor |
+| Datos minimos | familia destino, datos minimos del handoff, evidencia minima preservada, trazabilidad del origen y, si viene por integracion externa, referencia del ingreso externo y observaciones relevantes |
+| Reglas | el emisor entrega un caso semanticamente listo, no un caso ya resuelto por el receptor; una `designacion suplente` proveniente de `BC-07` puede auto-derivarse a `BC-03` cuando la pregunta dominante ya es `cubrir temporalmente`, los datos minimos son suficientes y no existe contradiccion bloqueante; `BC-01` debe preservar referencia de designacion, establecimiento, fechas y observaciones documentales de origen; `BC-01` no valida la cobertura ni confirma la toma de posesion |
 | Resultado | caso `derivada` a `BC-02`, `BC-03`, `BC-04`, `BC-05` o `BC-06` |
 | Evento emitido | `Novedad derivada a contexto funcional` |
 
@@ -205,7 +205,9 @@ tags:
 8. Si ademas hay faltante critico o contradiccion fuerte, corresponde `rechazada`.
 9. La preclasificacion automatica solo vale con origen confiable, datos minimos completos, evidencia valida y ausencia de contradicciones.
 10. Ante duda semantica en ingreso externo, el caso no debe saltar por intuicion: debe pasar por encuadre explicito en BC-01.
-11. El reingreso por evidencia complementaria agrega trazabilidad; no borra historia del estado previo.
+11. Una `designacion suplente` externa confiable puede auto-derivarse a `BC-03 - Cobertura transitoria` si la pregunta dominante es `cubrir temporalmente`, el `docente reemplazado` es identificable y no hay contradiccion bloqueante.
+12. Las observaciones documentales de origen no redefinen por si solas el encuadre; si el caso conserva piso suficiente y trae `constancia del turno a reconocimientos medicos`, la derivacion puede continuar preservando esa observacion.
+13. El reingreso por evidencia complementaria agrega trazabilidad; no borra historia del estado previo.
 
 ## 10. Pendientes residuales
 

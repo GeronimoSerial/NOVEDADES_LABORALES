@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e688cde6e6e43722",
+        "id": "a5ed02d7667a22c5",
         "type": "tabs",
         "children": [
           {
-            "id": "6b5220f2d7f6f07e",
+            "id": "453df9c53e8bb231",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07- Bounded Context/BC-03 - Cobertura transitoria/Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria.md",
+                "file": "07- Bounded Context/BC-03 - Cobertura transitoria/BC-03 - Cobertura transitoria.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria"
+              "title": "BC-03 - Cobertura transitoria"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "2a3089859bdbb602",
@@ -183,11 +184,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "6b5220f2d7f6f07e",
+  "active": "453df9c53e8bb231",
   "lastOpenFiles": [
+    "07- Bounded Context/BC-03 - Cobertura transitoria/Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria.md",
+    "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad/Catalogo de decisiones y eventos - BC-01 - Encuadre administrativo de la novedad.md",
+    "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad/BC-01 - Encuadre administrativo de la novedad.md",
+    "Sin título 2.base",
     "07- Bounded Context/BC-03 - Cobertura transitoria/Escenarios BDD - BC-03 - Cobertura transitoria.md",
     "Sin título 1.base",
-    "07- Bounded Context/BC-03 - Cobertura transitoria/Catalogo de decisiones y eventos - BC-03 - Cobertura transitoria.md",
     "07- Bounded Context/BC-03 - Cobertura transitoria/BC-03 - Cobertura transitoria.md",
     "07- Bounded Context/01 - Mapa y clasificacion.md",
     "07- Bounded Context/00 - Inicio.md",
@@ -204,8 +208,6 @@
     "07- Bounded Context/BC-04 - Movilidad funcional/BC-04 - Movilidad funcional.md",
     "07- Bounded Context/BC-02 - Interrupciones temporales/BC-02 - Interrupciones temporales.md",
     "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad/Escenarios BDD - BC-01 - Encuadre administrativo de la novedad.md",
-    "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad/Catalogo de decisiones y eventos - BC-01 - Encuadre administrativo de la novedad.md",
-    "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad/BC-01 - Encuadre administrativo de la novedad.md",
     "07- Bounded Context/BC-08 - Consolidacion y cierre",
     "07- Bounded Context/BC-07 - Integraciones y conciliacion",
     "07- Bounded Context/BC-06 - Ocupacion estable de cargos",
@@ -214,7 +216,6 @@
     "07- Bounded Context/BC-03 - Cobertura transitoria",
     "07- Bounded Context/BC-02 - Interrupciones temporales",
     "07- Bounded Context/BC-01 - Encuadre administrativo de la novedad",
-    "07- Bounded Context/03 - Conceptos transversales",
     "07- Bounded Context/NIVEL TACTICO/BC-01/Catalogo de decisiones y eventos - BC-01 - Encuadre administrativo de la novedad.md",
     "07- Bounded Context/NIVEL TACTICO/BC-01/Escenarios BDD - BC-01 - Encuadre administrativo de la novedad.md",
     "07- Bounded Context/NIVEL TACTICO/BC-07/Escenarios BDD - BC-07 - Integraciones y conciliacion.md",

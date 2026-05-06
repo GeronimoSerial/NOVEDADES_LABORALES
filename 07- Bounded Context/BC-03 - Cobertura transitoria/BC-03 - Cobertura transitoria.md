@@ -150,47 +150,47 @@ Una `designacion suficiente` proveniente de una `integracion externa` confiable,
 - si la cobertura reemplaza al docente reemplazado aunque la plaza siga siendo vacante en sentido estructural,
 - si un egreso definitivo del ocupante vigente obliga a cerrar, revisar o derivar la cobertura aunque la plaza siga siendo vacante en sentido estructural,
 - si la cobertura quedó desligada indebidamente de su motivo,
-- como se regulariza un caso inconsistente todavia abierto,
+- como se regulariza un caso inconsistente todavía abierto,
 - si el caso debe derivarse por cambio de base a `[[BC-06 - Ocupacion estable de cargos]]` cuando aparece una vacancia definitiva.
 
 ## 9. Reglas centrales de delimitacion
 
-1. **No hay cobertura sin causante valido.**
-2. En este nivel de diseno, **todo causante valido de cobertura proviene de `[[BC-02 - Interrupciones temporales]]` o de `[[BC-04 - Movilidad funcional]]`.**
+1. **No hay cobertura sin causante válido.**
+2. En este nivel de diseño, **todo causante valido de cobertura proviene de `[[BC-02 - Interrupciones temporales]]` o de `[[BC-04 - Movilidad funcional]]`.**
 3. **Toda cobertura debe poder explicarse por una causa habilitante trazable.**
 4. **Toda cobertura debe poder explicar a que docente reemplazado responde o, de modo excepcional y justificado, que referencia funcional equivalente cubre.**
-5. **La cobertura transitoria no cubre la vacante de base; reemplaza una prestacion temporalmente ausente vinculada a un docente reemplazado.**
+5. **La cobertura transitoria no cubre la vacante de base; reemplaza una prestación temporalmente ausente vinculada a un docente reemplazado.**
 6. **La toma de posesión es requisito de efectivizacion de la cobertura.**
 7. La cobertura puede validarse antes, **pero no queda en ejercicio sin toma de posesión**.
-8. **Toda cobertura validada debe contar con acto o designacion suficiente, provenga por integracion externa o por otra via trazable.**
-9. La vigencia de la cobertura depende del subtipo y del causante que la habilita, y **comienza con la toma de posesion**.
+8. **Toda cobertura validada debe contar con acto o designación suficiente, provenga por integración externa o por otra vía trazable.**
+9. La vigencia de la cobertura depende del subtipo y del causante que la habilita, y **comienza con la toma de posesión**.
 10. **Si el causante desaparece, termina o cambia, la cobertura debe revisarse o cerrarse.**
-11. **Si el ocupante vigente egresa en forma definitiva, la cobertura asociada debe cerrarse, revisarse o derivarse segun corresponda; la persistencia de la vacante de base no la sostiene por si sola.**
+11. **Si el ocupante vigente egresa en forma definitiva, la cobertura asociada debe cerrarse, revisarse o derivarse según corresponda; la persistencia de la vacante de base no la sostiene por si sola.**
 12. La cobertura transitoria no debe absorber interinatos, titularizaciones ni otras ocupaciones estables como figuras rectoras.
-13. Cuando el causante es una licencia por mayor jerarquia, la cobertura del cargo de origen corresponde exclusivamente a suplencia mientras el agente ausente retenga ese cargo.
+13. Cuando el causante es una licencia por mayor jerarquía, la cobertura del cargo de origen corresponde exclusivamente a suplencia mientras el agente ausente retenga ese cargo.
 14. Si el cargo reemplazado queda vacante en forma definitiva y la norma habilita el pase, el caso puede derivarse por cambio de base a `[[BC-06 - Ocupacion estable de cargos]]` como regla de interfaz.
-15. La regularización es excepcional, solo aplica a coberturas todavia abiertas pero inconsistentes y no debe usarse para ocultar coberturas huérfanas.
+15. La regularización es excepcional, solo aplica a coberturas todavía abiertas pero inconsistentes y no debe usarse para ocultar coberturas huérfanas.
 
 ## 10. Relación con otros bounded contexts
 
 - recibe habilitaciones o resultados desde `[[BC-02 - Interrupciones temporales]]`,
 - puede recibir casos directos ya encuadrados desde `[[BC-01 - Encuadre administrativo de la novedad]]`,
-- puede recibir derivaciones desde `[[BC-04 - Movilidad funcional]]` **cuando un caso de mayor jerarquía genere suplencia en el cargo de origen**; si existe licencia por mayor jerarquia, ese es el tratamiento obligatorio del cargo de origen,
-- puede recibir revision, cierre o derivacion desde `[[BC-05 - Egresos definitivos]]` cuando un egreso definitivo recaiga sobre el ocupante vigente reemplazado o altere la trazabilidad de la cobertura,
+- puede recibir derivaciones desde `[[BC-04 - Movilidad funcional]]` **cuando un caso de mayor jerarquía genere suplencia en el cargo de origen**; si existe licencia por mayor jerarquía, ese es el tratamiento obligatorio del cargo de origen,
+- puede recibir revisión, cierre o derivación desde `[[BC-05 - Egresos definitivos]]` cuando un egreso definitivo recaiga sobre el ocupante vigente reemplazado o altere la trazabilidad de la cobertura,
 - puede derivar excepcionalmente por cambio de base a `[[BC-06 - Ocupacion estable de cargos]]` cuando una suplencia deje de estar dominada por la logica temporal y deba transformarse en interinato u otra ocupación estable,
 - entrega novedades consolidadas o observadas a `[[BC-08 - Consolidacion y cierre]]`,
-- puede recibir desde `[[BC-07 - Integraciones y conciliación]]` una `designacion suficiente` proveniente de integracion externa para validar la cobertura, sin que eso reemplace la `toma de posesion`,
+- puede recibir desde `[[BC-07 - Integraciones y conciliación]]` una `designacion suficiente` proveniente de integración externa para validar la cobertura, sin que eso reemplace la `toma de posesion`,
 - puede requerir conciliación o regularización desde `[[BC-07 - Integraciones y conciliación]]`.
 
 ## 11. Puntos de interfaz relevantes
 
 - reglas sobre ausencia validada,
-- acto o designacion suficiente como condicion de validacion,
-- designacion suficiente proveniente de integracion externa confiable como soporte posible de `cobertura validada`,
-- licencia por mayor jerarquia como causante posible de suplencia en el cargo base,
-- distincion entre vacante de base y ocupante vigente cuando existe interino activo,
-- egreso definitivo del ocupante vigente como causal de cierre, revision o derivacion de la cobertura,
-- toma de posesion local como requisito de efectivizacion de la cobertura, incluso cuando la designacion llegue por integracion externa,
+- acto o designación suficiente como condición de validación,
+- designación suficiente proveniente de integración externa confiable como soporte posible de `cobertura validada`,
+- licencia por mayor jerarquía como causante posible de suplencia en el cargo base,
+- distinción entre vacante de base y ocupante vigente cuando existe interino activo,
+- egreso definitivo del ocupante vigente como causal de cierre, revisión o derivación de la cobertura,
+- toma de posesión local como requisito de efectivizacion de la cobertura, incluso cuando la designación llegue por integración externa,
 - trazabilidad entre cobertura y caso causante,
 - trazabilidad entre suplencia antecedente y eventual pase a ocupacion estable cuando exista vacancia definitiva,
 - regularizaciones por cierres tardíos o inconsistentes.

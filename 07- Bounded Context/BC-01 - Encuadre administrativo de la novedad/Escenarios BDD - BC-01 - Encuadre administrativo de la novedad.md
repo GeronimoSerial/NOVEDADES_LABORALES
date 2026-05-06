@@ -74,6 +74,17 @@ Y evidencia que sugiere dos familias funcionales incompatibles para el mismo hec
 **Entonces** el caso queda `observada`
 Y se emite `Novedad observada por inconsistencia o duda de encuadre`
 
+### Escenario: Observar una designacion suplente externa si no puede identificarse con claridad el docente reemplazado
+
+**Dado** una `novedad recibida` desde `BC-07 - Integraciones y conciliación`
+Y que el ingreso ya puede leerse como `designacion suplente`
+Y que existe agente, establecimiento, cargo/plaza y fechas consistentes
+Pero no puede individualizarse con claridad el `docente reemplazado`
+**Cuando** `BC-01 - Encuadre administrativo de la novedad` evalua la consistencia de encuadre
+**Entonces** el caso queda `observada`
+Y no debe derivarse todavia a `BC-03 - Cobertura transitoria`
+Y se emite `Novedad observada por inconsistencia o duda de encuadre`
+
 ### Escenario: Tratar como pendiente un relato sin respaldo con origen confiable
 
 **Dado** una `novedad recibida` con solo relato sin acto administrativo ni evento externo
@@ -146,6 +157,33 @@ Y completitud y consistencia suficientes
 **Entonces** se emite `Novedad clasificada`
 Y se emite `Novedad derivada a contexto funcional`
 Y se emite `Caso encuadrado para cobertura transitoria` hacia `[[BC-03 - Cobertura transitoria]]`
+
+### Escenario: Auto-derivar una designacion suplente externa a cobertura transitoria
+
+**Dado** una `novedad recibida` desde `BC-07 - Integraciones y conciliación`
+Y que el ingreso ya puede leerse como `designacion suplente`
+Y que la pregunta dominante es `cubrir temporalmente`
+Y completitud y consistencia suficientes
+Y `docente reemplazado` identificable con claridad
+**Cuando** `BC-01 - Encuadre administrativo de la novedad` clasifica y deriva
+**Entonces** se emite `Novedad clasificada`
+Y se emite `Novedad derivada a contexto funcional`
+Y se emite `Caso encuadrado para cobertura transitoria` hacia `[[BC-03 - Cobertura transitoria]]`
+Y la derivacion preserva la referencia de la designacion externa, el establecimiento, las fechas y la trazabilidad de origen
+
+### Escenario: Derivar una designacion suplente externa con observacion documental preservada
+
+**Dado** una `novedad recibida` desde `BC-07 - Integraciones y conciliación`
+Y que el ingreso ya puede leerse como `designacion suplente`
+Y que la pregunta dominante es `cubrir temporalmente`
+Y completitud y consistencia suficientes
+Y `docente reemplazado` identificable con claridad
+Y una observacion documental de origen
+Y `constancia del turno a reconocimientos medicos`
+**Cuando** `BC-01 - Encuadre administrativo de la novedad` clasifica y deriva
+**Entonces** el caso debe derivarse a `BC-03 - Cobertura transitoria`
+Y la observacion documental debe preservarse en el handoff
+Y `BC-01` no debe resolver por si solo la validacion de cobertura ni la toma de posesion
 
 ### Escenario: Clasificar por pregunta dominante y derivar a movilidad funcional
 
