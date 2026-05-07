@@ -19,11 +19,11 @@ Tres reuniones críticas sobre la implementación del **Sistema de Gestión de P
 
 ### Temas Principales del Día
 
-| Reunión | Horario | Tema Central | Impacto en SGPEM |
-|---------|---------|--------------|------------------|
-| Suspension reporting | 12:10 | Digitalización de suplencias y validación de plazas | Módulo de validaciones (RN-020 a RN-025) |
-| Licencias y suplencias | 13:25 | Sincronización POF-Gestión e inconsistencias | Integraciones futuras (Sección 14) |
-| Gestión de inconsistencias | 14:38 | Crisis actual en POST y estrategia de resolución | Nuevo módulo de inconsistencias no documentado |
+| Reunión                    | Horario | Tema Central                                        | Impacto en SGPEM                               |
+| -------------------------- | ------- | --------------------------------------------------- | ---------------------------------------------- |
+| Suspension reporting       | 12:10   | Digitalización de suplencias y validación de plazas | Módulo de validaciones (RN-020 a RN-025)       |
+| Licencias y suplencias     | 13:25   | Sincronización POF-Gestión e inconsistencias        | Integraciones futuras (Sección 14)             |
+| Gestión de inconsistencias | 14:38   | Crisis actual en POST y estrategia de resolución    | Nuevo módulo de inconsistencias no documentado |
 
 ### Contexto Técnico
 

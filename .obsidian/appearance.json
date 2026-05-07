@@ -1,3 +1,5 @@
 {
-  "cssTheme": "Atom"
+  "cssTheme": "Atom",
+  "baseFontSize": 18,
+  "baseFontSizeAction": true
 }
